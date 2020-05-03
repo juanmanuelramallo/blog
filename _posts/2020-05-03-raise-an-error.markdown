@@ -26,3 +26,4 @@ ThisErrorIKnow: some error explanation
 ```
 Here it raised our custom error class which in my opinion is better because we'll be able to rescue this error specifically later if needed.
 
+

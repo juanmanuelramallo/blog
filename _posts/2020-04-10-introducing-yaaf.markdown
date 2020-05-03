@@ -3,7 +3,7 @@ layout: post
 title:  "Do you use form objects in your Rails apps?"
 date:   2020-04-10 18:00:00 -0300
 categories: gems
-tags: [rails, gems, oss]
+tags: [rails, gems]
 ---
 Introducing [yaaf](https://github.com/rootstrap/yaaf), a gem to ease the usage of the form object pattern in rails apps.
 
