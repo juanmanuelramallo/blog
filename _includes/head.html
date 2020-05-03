@@ -23,7 +23,7 @@
     </title>
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+  <link rel="alternate" type="application/feed+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
   <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
 
@@ -34,4 +34,15 @@
     {{ include_to_scssify | scssify }}
   </style>
 
+  {% if jekyll.environment == "production" %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66822802-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-66822802-7');
+    </script>
+  {% endif %}
 </head>
