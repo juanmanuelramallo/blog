@@ -6,6 +6,7 @@ tags: [ruby, gems]
 ---
 
 When developing gems or external libraries we frequently use semantic versioning as a string.
+<!--more-->
 
 ```ruby
 module MyGem

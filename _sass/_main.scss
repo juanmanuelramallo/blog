@@ -157,6 +157,15 @@ strong, b {
   //list-style-position: inside;
 }
 
+.posts li .title {
+  display: block;
+}
+
+.posts li .excerpt a {
+  white-space: normal;
+  color: gray;
+}
+
 main {
   display:flex;
   flex-wrap:wrap;

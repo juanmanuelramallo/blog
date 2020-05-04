@@ -3,15 +3,15 @@ layout: post
 title:  "Use error objects instead of strings"
 categories: why-not
 tags: [why-not, ruby]
+excerpt: "[...] we tend to write a lovely: raise 'some error explanation'"
 ---
 
-Every once in a while we need to raise an error so that our program exits and displays the error in the standard output.
+Every once in a while we need to raise an error so that our program exits and displays the error in the standard error.
 And most of the time (seen it several times while code reviewing) we tend to write a lovely: `raise "some error explanation"`
 
 ## Why not use an object instead of a string?
 
 When we raise errors using objects we'll be able to easily identify those errors, everywhere (logs, console, when rescuing).
-
 Take a look at this example:
 ```
 [1] pry(main)> raise "some error"
