@@ -7,12 +7,10 @@ layout: default
   <small>
     {% include time.html date=page.date %}
     &middot;
-    <span id="reading-time">... min read</span>
+    {% include read_time.html read_time=page.read_time_in_minutes %}
   </small>
   {{ content }}
 
   <span class="meta">{% for tag in page.tags %}
     <a href="/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
 </section>
-
-<script src="/assets/js/post.js"></script>
