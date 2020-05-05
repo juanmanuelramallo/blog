@@ -2,22 +2,4 @@
 layout: default
 ---
 
-<section class="posts">
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span>
-          <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <small class="excerpt">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | strip_html }}</a>
-          </small>
-        </span>
-        <span class="stats">
-          {% include read_time.html read_time=post.read_time_in_minutes %}
-          &middot;
-          {% include time.html date=post.date %}
-        </span>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+{% include posts.html posts=site.posts %}

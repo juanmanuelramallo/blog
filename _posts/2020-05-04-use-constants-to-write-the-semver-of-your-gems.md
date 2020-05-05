@@ -2,10 +2,10 @@
 layout: post
 title:  "Use constants to specify the version of your gem"
 categories: why-not
-tags: [ruby, gems]
+tags: [why-not, ruby, gems]
 ---
 
-When developing gems or external libraries we frequently use semantic versioning as a string.
+When developing gems or external libraries we frequently write the semantic versioning as a string.
 <!--more-->
 
 ```ruby
@@ -30,5 +30,3 @@ end
 ```
 
 It will allow us to keep our git diff clean when releasing, and also make our version string less prone to typos.
-
-

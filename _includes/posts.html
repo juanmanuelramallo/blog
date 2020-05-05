@@ -1,0 +1,22 @@
+<section class="posts">
+  {% if include.title %}
+    <h1>{{ include.title }}</h1>
+  {% endif %}
+  <ul>
+    {% for post in include.posts %}
+      <li>
+        <span>
+          <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <small class="excerpt">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | strip_html }}</a>
+          </small>
+        </span>
+        <span class="stats">
+          {% include read_time.html read_time=post.read_time_in_minutes %}
+          &middot;
+          {% include time.html date=post.date %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

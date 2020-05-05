@@ -2,13 +2,6 @@
 layout: default
 ---
 
-<section class="posts">
-<h1>Tag #{{page.tag}}</h1>
-  <ul>
-    {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
-    <li><a class="post" href="{{ post.url }}">{{ post.title }}</a>{% include time.html date=post.date %}</li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</section>
+{% assign posts = site.tags[page.tag] %}
+{% assign title = "#" | append: page.tag %}
+{% include posts.html posts=posts title=title %}
