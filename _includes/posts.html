@@ -7,14 +7,16 @@
       <li>
         <span>
           <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <small class="excerpt">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | strip_html }}</a>
+          <small>
+            <a class="muted-text" href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | strip_html }}</a>
           </small>
         </span>
         <span class="stats">
-          {% include read_time.html read_time=post.read_time_in_minutes %}
-          &middot;
-          {% include time.html date=post.date %}
+          <small class="muted-text">
+            {% include read_time.html read_time=post.read_time_in_minutes %}
+            &middot;
+            {% include time.html date=post.date %}
+          </small>
         </span>
       </li>
     {% endfor %}

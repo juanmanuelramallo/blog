@@ -134,10 +134,18 @@ strong, b {
 }
 
 .posts li {
-  align-items:center;
-  display:flex;
-  justify-content:space-between;
-  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 960px) {
+  .posts li {
+    align-items:center;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
 }
 
 .posts li a, .posts li div, .projects li a {
@@ -147,10 +155,11 @@ strong, b {
   text-decoration: none;
 }
 
-.posts li .stats {
-  padding-left: 1rem;
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
+@media screen and (min-width: 960px) {
+  .posts li .stats {
+    padding-left: 1rem;
+    white-space: nowrap;
+  }
 }
 
 .post ul, .project ul, .post ol  {
@@ -161,9 +170,12 @@ strong, b {
   display: block;
 }
 
-.posts li .excerpt a {
+.posts li small a {
   white-space: normal;
-  color: gray;
+}
+
+.muted-text {
+  color: gray !important;
 }
 
 main {
