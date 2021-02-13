@@ -1,9 +1,12 @@
 *,:after,:before {
   box-sizing:border-box;
-  background-color:inherit;
-  color:inherit;
   margin:0;
   padding:0;
+}
+
+*:target {
+  background-color: #ffa;
+  transition: all 1s linear;
 }
 
 body {
