@@ -40,6 +40,7 @@ end
 
 CPU_COUNT = ENV.fetch('RACTORS_COUNT', '2').to_i
 MAX_REQUEST_SIZE = ENV.fetch('MAX_REQUEST_SIZE', '4096').to_i # Bytes
+PORT = ENV.fetch('PORT', '8080').to_i
 CONTENT_TYPES = {
   '.bin' => 'application/octet-stream',
   '.css' => 'text/css',
@@ -83,7 +84,7 @@ workers = CPU_COUNT.times.map do
 end
 
 listener = Ractor.new(pipe) do |pipe|
-  server = TCPServer.new(8080)
+  server = TCPServer.new(PORT)
   loop do
     conn, _ = server.accept
     pipe.send(conn, move: true)
