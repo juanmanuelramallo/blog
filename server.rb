@@ -1,5 +1,10 @@
 require 'socket'
 
+# TODO:
+# 1. HTTPS ???
+# 2. Handle what happens when the client halts the request ( Broken pipe (Errno::EPIPE)
+# 3. Move assets to a CDN
+
 class HTTPParser
   attr_reader :data
 
