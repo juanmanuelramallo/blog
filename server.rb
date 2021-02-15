@@ -10,6 +10,8 @@ class HTTPParser
   end
 
   def call
+    return Output.new('unknown', 'unknown') unless data
+
     method, path, _ = data.split(' ')
 
     Output.new(method, path)
