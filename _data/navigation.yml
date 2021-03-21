@@ -2,6 +2,6 @@ links:
 - title: Articles
   url: /
 - title: About
-  url: /about
+  url: '#about'
 - title: RSS
   url: /feed.xml

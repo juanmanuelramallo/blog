@@ -7,8 +7,11 @@ layout: compress
   {% include head.html %}
   <body>
     <main role="main">
-      {% include navigation.html %}
-      {{ content }}
+      <div class="layout">
+        {% include navigation.html %}
+        {{ content }}
+      </div>
+      {% include footer.html %}
     </main>
   </body>
 </html>
