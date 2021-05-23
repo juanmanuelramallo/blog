@@ -154,10 +154,15 @@ strong, b {
 }
 
 .posts li a, .posts li div, .projects li a {
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
   text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .posts li a, .posts li div, .projects li a {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -171,7 +176,7 @@ strong, b {
   //list-style-position: inside;
 }
 
-.posts li .title {
+.block {
   display: block;
 }
 
@@ -182,6 +187,18 @@ strong, b {
 .muted-text {
   color: gray !important;
 }
+
+.post-tag {
+  font-size: smaller;
+  padding: 2px 0px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+// .badge.ruby { background: #ec7211; }
+// .badge.rails { background: #ec7211; }
+// .badge.how-to { background: #39904c; }
+// .badge.why-not { background: #60a0d0; }
 
 main {
   background: white;
