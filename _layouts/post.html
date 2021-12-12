@@ -2,15 +2,25 @@
 layout: default
 ---
 
-<section class="post" id="post">
-  <h2 style="">{{ page.title }}</h2>
-  <small>
-    {% include time.html date=page.date %}
-    &middot;
-    {% include read_time.html read_time=page.read_time_in_minutes %}
-  </small>
-  {{ content }}
+<section class="post my-6" id="post">
+  <div class="text-left mb-3">
+    <p class="text-sm">
+      {% include time.html date=page.date %}
+      &middot;
+      {% include read_time.html read_time=page.read_time_in_minutes %}
+    </p>
+    <h1 class="text-3xl mt-2 font-extrabold tracking-tight text-gray-900 sm:text-4xl xl:mb-8">{{ page.title }}</h1>
+  </div>
 
-  <span class="meta">{% for tag in page.tags %}
-    <a href="/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+  <div class="prose mb-6">
+    {{ content }}
+  </div>
+
+  <div class="flex flex-row">
+    {% for tag in page.tags %}
+    <p class="mr-2">
+      {% include tag.html tag=tag %}
+    </p>
+    {% endfor %}
+  </div>
 </section>
