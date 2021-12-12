@@ -5,13 +5,11 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en" >
   {% include head.html %}
-  <body>
-    <main role="main">
-      <div class="layout">
-        {% include navigation.html %}
-        {{ content }}
-      </div>
-      {% include footer.html %}
+  <body class="min-h-screen flex flex-col justify-between transition-all ease-in-out delay-200">
+    <main role="main" class="md:container md:mx-auto mx-2">
+      {% include navigation.html %}
+      {{ content }}
     </main>
+    {% include footer.html %}
   </body>
 </html>

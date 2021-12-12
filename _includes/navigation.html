@@ -1,10 +1,20 @@
-<header role="banner">
-  <h1 class="logo"><a href="/">Write it simple.</a></h1>
+<header role="banner" class="flex flex-row justify-between py-4">
+  <a href="/">
+    <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-black to-gray-400 hover:from-sky-400 hover:to-amber-400" href="/">
+      Write it<br> simple.
+    </span>
+  </a>
 
   <nav role="navigation">
-    <ul>
+    <ul class="flex flex-row">
      {% for item in site.data.navigation.links %}
-        <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+        <li class="px-4">
+          <a
+            href="{{ item.url }}"
+            class="py-1 hover:text-primary">
+            {{ item.title }}
+          </a>
+        </li>
      {% endfor %}
     </ul>
   </nav>
