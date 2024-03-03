@@ -13,7 +13,8 @@
     "postcss-cli": "^9.1.0"
   },
   "scripts": {
-    "dev": "postcss -w main.css -o assets/main.css"
+    "dev": "postcss -w main.css -o assets/main.css",
+    "build": "postcss main.css -o assets/main.css"
   },
   "repository": {
     "type": "git",

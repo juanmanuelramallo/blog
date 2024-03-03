@@ -1,21 +1,39 @@
-<header role="banner" class="flex flex-row justify-between py-4">
-  <a href="/">
-    <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-black to-gray-400 hover:from-sky-400 hover:to-amber-400" href="/">
-      Write it<br> simple.
-    </span>
-  </a>
+<header role="banner" class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm">
+  <div class="md:container md:mx-auto flex flex-row justify-between py-4 mx-2">
+    <div class="sm:flex sm:flex-row sm:gap-10">
+      <a href="/">
+        <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-black to-gray-400 hover:from-sky-400 hover:to-amber-400" href="/">
+          Write it<br> simple.
+        </span>
+      </a>
 
-  <nav role="navigation">
-    <ul class="flex flex-row">
-     {% for item in site.data.navigation.links %}
-        <li class="px-4">
-          <a
-            href="{{ item.url }}"
-            class="py-1 hover:text-primary">
-            {{ item.title }}
-          </a>
-        </li>
-     {% endfor %}
-    </ul>
-  </nav>
+      <a class="hidden sm:flex my-auto flex-col items-center p-2 bg-gray-50 ring-1 ring-gray-100 rounded-lg text-gray-600 opacity-60 hover:bg-gray-100 hover:ring-gray-200 hover:opacity-100 transition"
+         href="https://onlydocs.1ma.dev"
+         target="_blank">
+        <span>check my side project</span>
+        <span><span class="text-gray-800">Only</span><span class="font-bold text-[#1771d8]">Docs</span></span>
+      </a>
+    </div>
+
+
+    <div class="flex flex-col gap-2 sm:block">
+      <div class="flex flex-row my-auto h-full" role="navigation">
+        {% for item in site.data.navigation.links %}
+          <div class="px-1 sm:px-4 my-auto">
+            <a
+                href="{{ item.url }}"
+                class="py-1 hover:text-primary">
+              {{ item.title }}
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <a class="sm:hidden my-auto flex flex-col items-center p-2 bg-gray-50 ring-1 ring-gray-100 rounded-lg text-gray-600 hover:bg-gray-100 hover:ring-gray-200 transition"
+         href="https://onlydocs.1ma.dev"
+         target="_blank">
+        <span><span class="text-gray-800">Only</span><span class="font-bold text-[#1771d8]">Docs</span></span>
+      </a>
+    </div>
+  </div>
 </header>

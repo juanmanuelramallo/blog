@@ -6,9 +6,11 @@ layout: compress
 <html lang="en" >
   {% include head.html %}
   <body class="min-h-screen flex flex-col justify-between transition-all ease-in-out delay-200">
-    <main role="main" class="md:container md:mx-auto mx-2">
+    <main role="main" class="">
       {% include navigation.html %}
-      {{ content }}
+      <div class="md:container md:mx-auto mx-2">
+        {{ content }}
+      </div>
     </main>
     {% include footer.html %}
   </body>
