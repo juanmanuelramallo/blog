@@ -29,10 +29,14 @@ These slides were written in Markdown and built with reveal.js—[the script use
 
 In addition to that, after preparing a written document for a course I was taking in the university, the teachers asked us to present the work. Given we had already written the document in markdown, we only removed little bits and used reveal.js to create a presentation. The presentation was simple and nice, everything we needed to talk about the work done.
 
+We used Pandoc to generate the PDF first. It used the markdown as source. And turns out Pandoc also supports reveal.js as an output format. Nice.
+
 ---
 
 Eventually, this side project will not only support generating slides from markdown, but also a printable PDF files or ebooks or any other format I may need.
 
 Who knows, maybe in time it becomes a ~~side~~ main project.
+
+For now, I'll keep spending my days writing code and tests, but at nights only writing code.
 
 This is the start of [Only Docs](https://onlydocs.1ma.dev)
