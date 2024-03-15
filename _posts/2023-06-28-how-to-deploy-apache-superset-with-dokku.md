@@ -57,7 +57,7 @@ dokku redis:link acme-superset acme-superset
 
 This is optional, but I recommend doing it.
 
-By default Superset uses SQLite, which will not allow us to create multiple Datasets pointing to different tables but with the same name. This is solved by using Postgres as the metastore (metastore is how Superset documentation refers to the database where Supersets objects are stored—dashboards, charts, etc).
+By default Superset uses SQLite, which will not allow us to create multiple Datasets pointing to different tables and using the same name. This is solved by using Postgres as the metastore (metastore is how Superset documentation refers to the database where Supersets objects are stored—dashboards, charts, etc).
 
 Redis is also optional but it's nice to have in case you want to configure data caching.
 
