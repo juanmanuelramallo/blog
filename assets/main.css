@@ -1074,6 +1074,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #0369a1;
 }
 
+.experiment-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.experiment-note h2 {
+  margin: 0 0 0.75rem;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.experiment-note p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.experiment-note p + p {
+  margin-top: 0.75rem;
+}
+
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
