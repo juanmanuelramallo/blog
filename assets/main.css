@@ -780,6 +780,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .prose > :where(:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+.fixed {
+  position: fixed;
+}
 .sticky {
   position: -webkit-sticky;
   position: sticky;
