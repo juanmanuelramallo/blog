@@ -22,7 +22,7 @@
               {% include time.html date=post.date %}
               {% if post.author %}
               &middot;
-              <span>By {{ post.author }}</span>
+              <span>By {{ post.author | replace: "Juan Manuel Ramallo", "Juanma" }}</span>
               {% endif %}
             </p>
           </div>
