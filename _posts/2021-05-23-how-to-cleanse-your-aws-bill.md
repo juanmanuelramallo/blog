@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title: "How to cleanse your AWS bill"
 categories: how-to
 tags: [how-to, aws]

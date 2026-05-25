@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title:  "Use constants to specify the version of your gem"
 categories: why-not
 tags: [why-not, ruby, gems]

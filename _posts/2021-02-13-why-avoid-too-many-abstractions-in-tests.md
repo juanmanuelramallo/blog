@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title: "Why avoid too many abstractions in tests?"
 categories: ruby
 tags: [ruby, testing, rspec, shared examples]
@@ -41,4 +42,3 @@ With test code is quite similar, we don't want to abstract everything but we'd r
 To sum up, abstractions for non meaningful parts of test code are valid and really useful. Abstractions for test code that describes actual behavior of the system are never\[<cite>[*]({{ page.url}}#i-can-live-with-it)</cite>\] good.
 
 <sub id='i-can-live-with-it'>* I wrote a shared example last month, out of a code review suggestion, and I can live with it</sub>
-

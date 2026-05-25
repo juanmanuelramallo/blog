@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title:  "Do you use form objects in your Rails apps?"
 date:   2020-04-10 18:00:00 -0300
 categories: gems

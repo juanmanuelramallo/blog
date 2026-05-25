@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title:  "When objects become super objects"
 categories: ruby
 tags: [ruby, rails, oop]
@@ -55,4 +56,3 @@ Remember The Pencil 3000™? I can't imagine how would I sharp the pencil, with 
 ## Single-responsibility principle
 
 "[...] each software module should have one and only one reason to change." [Better read it from here](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html){:target="_blank"}
-

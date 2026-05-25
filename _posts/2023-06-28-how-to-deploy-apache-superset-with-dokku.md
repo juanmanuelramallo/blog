@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title: "How to deploy Apache Superset with Dokku?"
 categories: how-to
 tags: [how-to, dokku]

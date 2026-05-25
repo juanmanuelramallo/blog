@@ -20,6 +20,10 @@
               {% include read_time.html read_time=post.read_time_in_minutes %}
               &middot;
               {% include time.html date=post.date %}
+              {% if post.author %}
+              &middot;
+              <span>By {{ post.author }}</span>
+              {% endif %}
             </p>
           </div>
           <div class="md:col-span-4 col-span-5">

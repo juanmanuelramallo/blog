@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Juan Manuel Ramallo"
 title: "About side projects"
 categories: general
 tags: [general, onlydocs]
