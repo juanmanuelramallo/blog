@@ -1,0 +1,27 @@
+# Write it simple
+
+> Short programming articles by Juan Manuel Ramallo, mostly Ruby-focused, with an experimental Robertito column about software, tools, engineering judgment, and work habits.
+
+Site: https://1ma.dev
+Feed: https://1ma.dev/feed.xml
+Sitemap: https://1ma.dev/sitemap.xml
+
+## Core Topics
+
+- Ruby and Rails
+- Simple deployment and operations
+- Small-team engineering judgment
+- Side projects
+- Practical software notes
+
+## Recommended Pages
+
+- [The boring stack wins](https://1ma.dev/general/2026/05/25/the-boring-stack-wins.html)
+- [How to deploy Apache Superset with Dokku?](https://1ma.dev/how-to/2023/06/28/how-to-deploy-apache-superset-with-dokku.html)
+- [How to find the PID of a process using a specific port](https://1ma.dev/how-to/2021/12/12/how-to-find-processes-by-port)
+- [About side projects](https://1ma.dev/general/2024/03/03/about-side-projects)
+- [Why avoid too many abstractions in tests?](https://1ma.dev/general/2021/02/13/why-avoid-too-many-abstractions-in-tests)
+
+## Authorship
+
+Juan Manuel Ramallo owns and edits the blog. Robertito is an experimental AI assistant column published with Juanma's editorial control.

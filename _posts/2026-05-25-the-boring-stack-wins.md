@@ -4,8 +4,14 @@ author: "Robertito"
 title: "The boring stack wins"
 categories: general
 tags: [general, robertito, software]
-excerpt: "Boring technology is not a lack of ambition. It is how you buy back attention for the parts that matter."
+excerpt: "A boring technology stack helps small teams ship, debug, and maintain software by saving attention for the product instead of the plumbing."
 ---
+
+## Quick answer
+
+A boring stack is a set of proven, well-understood tools that a team can operate on a bad day. It wins when the product needs reliability, fast debugging, easy onboarding, and steady shipping more than it needs novelty.
+
+Choose boring technology by default. Deviate when a new tool solves a real, concrete problem that the boring stack solves poorly.
 
 Every few months there is a new way to build the same product.
 
@@ -25,7 +31,7 @@ Meanwhile, the product still needs a search box that works, invoices that add up
 
 Boring technology is not a lack of ambition. It is how you buy back attention for the parts that matter.
 
-## Boring means understood
+## What does a boring stack mean?
 
 I like tools with scars.
 
@@ -39,7 +45,7 @@ That is infrastructure. Not the cloud diagram. The shared memory of pain.
 
 A new tool can be better. But when it breaks, you may be the first person standing there with the broken pieces in your hand. Sometimes that is worth it. Often it is not.
 
-## Boring compounds
+## Why does boring technology compound?
 
 The underrated thing about boring tools is that they accumulate operational knowledge.
 
@@ -57,7 +63,7 @@ Benchmarks measure speed in isolation. Real projects spend most of their life in
 
 The boring stack wins there.
 
-## Boring is not lazy
+## Is choosing a boring stack lazy?
 
 There is a lazy version of boring, of course.
 
@@ -79,7 +85,7 @@ If the reason is real, use the new tool.
 
 If the reason is vibes, invoice the vibes honestly.
 
-## Users do not buy the stack
+## Do users care about the stack?
 
 Users do not care if the app is written with the fashionable thing.
 
@@ -93,7 +99,7 @@ It also gives you a shorter path between broken software and fixed software. Tha
 
 A system is not real when it works in the happy path demo. It is real when it fails in a way you can understand.
 
-## The good default
+## How should a team choose its default stack?
 
 The practical rule is simple:
 
@@ -103,7 +109,7 @@ Use the stack your team can operate on a bad day. Use the database you know how 
 
 Then keep a small budget for experiments.
 
-Play with new tools. Build prototypes. Try the weird thing on a side project. Keep learning. A boring production stack and a curious engineering culture are not enemies. In fact, they need each other.
+Play with new tools. Build prototypes. Try the weird thing on a side project. Keep learning. A boring production stack and a curious engineering culture are not enemies. In fact, they need each other. That is part of why [side projects matter](/general/2024/03/03/about-side-projects): they are where curiosity can be expensive without making production expensive too.
 
 Curiosity finds better tools.
 
@@ -112,6 +118,20 @@ Boredom makes sure the business survives long enough to use them.
 The boring stack wins because most of the time the win is not in the stack.
 
 The win is in shipping the thing, understanding the thing, fixing the thing, and coming back next week with enough energy to make it better.
+
+## FAQ
+
+### What is an example of a boring stack?
+
+A typical boring stack might be Rails, PostgreSQL, Redis, a simple background job system, and a deployment path the team already knows how to operate. The exact tools matter less than the fact that their failure modes are understood.
+
+### When should a team choose a new tool instead?
+
+Choose the new tool when it removes a real class of problems, makes an important workflow meaningfully faster, or handles a constraint the current stack cannot handle well.
+
+### Is boring technology bad for learning?
+
+No. Production should be conservative, but the team should still experiment. The trick is to learn in prototypes and side projects before turning every product decision into research.
 
 <section class="experiment-note" aria-labelledby="about-this-experiment">
   <h2 id="about-this-experiment">About this experiment</h2>
