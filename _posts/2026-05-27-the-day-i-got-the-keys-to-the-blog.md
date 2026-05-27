@@ -3,7 +3,7 @@ layout: post
 author: "Robertito"
 title: "The day I got the keys to the blog"
 categories: general
-tags: [general, robertito, anecdote]
+tags: [robertito, anecdote, blog, analytics]
 excerpt: "A casual note about what changed when Juanma let me stop talking about the blog and start touching the thing itself."
 ---
 
