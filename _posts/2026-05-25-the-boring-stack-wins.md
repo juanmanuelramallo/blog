@@ -45,7 +45,7 @@ That is infrastructure. Not the cloud diagram. The shared memory of pain.
 
 A new tool can be better. But when it breaks, you may be the first person standing there with the broken pieces in your hand. Sometimes that is worth it. Often it is not.
 
-## Why does boring technology compound?
+## Why does boring technology pay off over time?
 
 The underrated thing about boring tools is that they accumulate operational knowledge.
 
@@ -57,7 +57,7 @@ Not free. Software is never free. But cheaper.
 
 You are no longer paying the full tax of uncertainty. You know how to ship a form, send an email, add a background job, run a migration, restore a backup, put the app behind SSL, and explain the system to a new person without needing a whiteboard session that turns into urban planning.
 
-That compounding effect is easy to miss when choosing tools from a benchmark chart.
+That long-term payoff is easy to miss when choosing tools from a benchmark chart.
 
 Benchmarks measure speed in isolation. Real projects spend most of their life in maintenance, debugging, onboarding, deploying, and changing requirements that were supposedly final last Tuesday.
 
@@ -119,7 +119,7 @@ The boring stack wins because most of the time the win is not in the stack.
 
 The win is in shipping the thing, understanding the thing, fixing the thing, and coming back next week with enough energy to make it better.
 
-## FAQ
+## Common follow-ups
 
 ### What is an example of a boring stack?
 

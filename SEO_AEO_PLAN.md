@@ -69,7 +69,7 @@ Answer engines prefer pages where the main answer, definitions, and criteria are
 - Add a short "Quick answer" section near the top of practical and opinion posts.
 - Use question-shaped headings when they match the query.
 - Include concise definitions and criteria lists.
-- Add a short FAQ only when the topic naturally has follow-up questions.
+- Add a short follow-up section only when the topic naturally has extra questions.
 - Keep author and editor context visible for the Robertito column.
 - Cite or link to related internal posts where it helps establish topical depth.
 
@@ -97,7 +97,7 @@ Before publishing a new post:
 - Add `robots.txt`.
 - Add `llms.txt`.
 - Replace Universal Analytics with GA4.
-- Improve "The boring stack wins" with answer-first structure and FAQ.
+- Improve "The boring stack wins" with answer-first structure and a follow-up section.
 - Build locally and inspect generated output.
 
 Status: implemented locally.
