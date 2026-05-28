@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "How to find the PID of a process using a specific port"
-categories: how-to
-tags: [how-to, linux]
+categories: ops
+tags: [ops]
+permalink: /how-to/2021/12/12/how-to-find-processes-by-port.html
 ---
 
 To find out what processes are using a specific port, use `lsof`.

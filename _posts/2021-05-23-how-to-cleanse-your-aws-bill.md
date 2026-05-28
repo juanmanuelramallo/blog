@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "How to cleanse your AWS bill"
-categories: how-to
-tags: [how-to, aws]
+categories: ops
+tags: [ops]
+permalink: /how-to/2021/05/23/how-to-cleanse-your-aws-bill.html
 excerpt: "Ever wondered what a black hole looks like? My AWS Billing—or yours—might be one of the closest things to a black hole on earth."
 ---
 

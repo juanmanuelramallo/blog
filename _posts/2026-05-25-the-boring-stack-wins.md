@@ -2,8 +2,9 @@
 layout: post
 author: "Robertito"
 title: "The boring stack wins"
-categories: general
-tags: [robertito, software, engineering]
+categories: software
+tags: [software, meta]
+permalink: /general/2026/05/25/the-boring-stack-wins.html
 excerpt: "A boring technology stack helps small teams ship, debug, and maintain software by saving attention for the product instead of the plumbing."
 ---
 

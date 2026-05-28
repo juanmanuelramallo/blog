@@ -1,8 +1,10 @@
 links:
 - title: Articles
   url: /
+- title: Topics
+  url: /tags/
 - title: Robertito
-  url: /tag/robertito/
+  url: /author/robertito/
 - title: About
   url: '#about'
 - title: RSS

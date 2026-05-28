@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "About side projects"
-categories: general
-tags: [general, onlydocs]
+categories: meta
+tags: [meta, software]
+permalink: /general/2024/03/03/about-side-projects.html
 ---
 
 There is something about writing code for me and no one else.

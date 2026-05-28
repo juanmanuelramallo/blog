@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "I don't use nil"
-categories: ruby
-tags: [ruby]
+categories: software
+tags: [software, ruby, rails]
+permalink: /ruby/2020/10/12/do-not-use-nil.html
 excerpt: "NoMethodError: undefined method 'excerpt' for nil:NilClass"
 ---
 

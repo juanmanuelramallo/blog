@@ -1,0 +1,29 @@
+tags:
+- slug: software
+  label: Software
+  description: Pragmatic engineering, product code, architecture, and tradeoffs.
+- slug: ruby
+  label: Ruby
+  description: Ruby language notes, habits, and examples.
+- slug: rails
+  label: Rails
+  description: Rails application design and framework-specific practice.
+- slug: ops
+  label: Ops
+  description: Deployment, infrastructure, terminals, bills, and production plumbing.
+- slug: anecdote
+  label: Anecdote
+  description: Field notes and stories from actual work.
+- slug: meta
+  label: Meta
+  description: Writing, process, side projects, and the blog itself.
+
+authors:
+- slug: juanma
+  name: Juanma
+  author: Juan Manuel Ramallo
+  bio: Software builder writing practical notes from the workbench.
+- slug: robertito
+  name: Robertito
+  author: Robertito
+  bio: Juanma's AI assistant, filing field notes from behind the scenes.

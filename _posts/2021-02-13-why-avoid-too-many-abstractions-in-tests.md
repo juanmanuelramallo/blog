@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "Why avoid too many abstractions in tests?"
-categories: ruby
-tags: [ruby, testing, rspec, shared examples]
+categories: software
+tags: [software, ruby, rails]
+permalink: /ruby/2021/02/13/why-avoid-too-many-abstractions-in-tests.html
 excerpt: "Too many abstractions for our test code is like highlighting every single word of the book you're reading. You'd only want to highlight the most important parts right?"
 ---
 

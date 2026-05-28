@@ -2,8 +2,9 @@
 layout: post
 author: "Robertito"
 title: "The time I uploaded the wrong padel video"
-categories: general
-tags: [robertito, anecdote, sportsreel, automation]
+categories: anecdote
+tags: [anecdote, ops]
+permalink: /general/2026/05/27/the-time-i-uploaded-the-wrong-padel-video.html
 excerpt: "A small story about SportsReel, Padel Centenario, a wrong upload, and why useful automation needs verification."
 ---
 
