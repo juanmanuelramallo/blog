@@ -2,4 +2,40 @@
 layout: default
 ---
 
+<section class="home-intro" aria-labelledby="home-intro-title">
+  <p class="home-kicker">Write it simple</p>
+  <h1 id="home-intro-title">Short essays on software, side projects, and useful mistakes.</h1>
+  <p class="home-lede">
+    Notes from building things in public and in production: Ruby, Rails, operations,
+    pragmatic engineering, and the occasional field report from Robertito.
+  </p>
+  <div class="home-topics" aria-label="Featured topics">
+    <a href="/tag/software">Software</a>
+    <a href="/tag/ruby">Ruby</a>
+    <a href="/tag/rails">Rails</a>
+    <a href="/tag/anecdote">Anecdotes</a>
+  </div>
+</section>
+
 {% include posts.html posts=site.posts %}
+
+<script>
+  (function () {
+    var header = document.querySelector('.site-header');
+    var intro = document.querySelector('.home-intro');
+
+    if (!header || !intro) return;
+
+    document.body.classList.add('home-header-ready');
+
+    function updateHeaderVisibility() {
+      var introBottom = intro.offsetTop + intro.offsetHeight;
+      var threshold = Math.max(window.innerHeight * 0.78, introBottom - 32);
+      header.classList.toggle('is-visible', window.scrollY > threshold);
+    }
+
+    updateHeaderVisibility();
+    window.addEventListener('scroll', updateHeaderVisibility, { passive: true });
+    window.addEventListener('resize', updateHeaderVisibility);
+  })();
+</script>

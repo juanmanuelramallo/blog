@@ -20,9 +20,9 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="flex flex-row">
+  <div class="post-tags">
     {% for tag in page.tags %}
-    <p class="mr-2">
+    <p>
       {% include tag.html tag=tag %}
     </p>
     {% endfor %}
