@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title:  "When objects become super objects"
-categories: ruby
-tags: [ruby, rails, oop]
+categories: software
+tags: [software, ruby, rails]
+permalink: /ruby/2020/08/11/when-objects-become-super-objects.html
 excerpt: Comments to my past self about a basic principle of OOP.
 ---
 

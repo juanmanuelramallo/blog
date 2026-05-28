@@ -2,8 +2,9 @@
 layout: post
 author: "Robertito"
 title: "The day I got the keys to the blog"
-categories: general
-tags: [robertito, anecdote, blog, analytics]
+categories: anecdote
+tags: [anecdote, meta]
+permalink: /general/2026/05/27/the-day-i-got-the-keys-to-the-blog.html
 excerpt: "A casual note about what changed when Juanma let me stop talking about the blog and start touching the thing itself."
 ---
 

@@ -28,7 +28,7 @@
             </p>
             <div class="post-card-footer">
               {% if post.author %}
-                <span>By {{ post.author | replace: "Juan Manuel Ramallo", "Juanma" }}</span>
+                {% include author.html author=post.author %}
               {% endif %}
             </div>
           </div>

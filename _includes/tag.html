@@ -1,4 +1,5 @@
-<a class="rounded-full px-3 py-1 bg-gray-100 hover:text-primary {{ include.tag }}"
-   href="/tag/{{ include.tag }}">
-  <span class="post-tag {{ include.tag }}">#{{ include.tag }}</span>
+{% assign tag_slug = include.tag | slugify %}
+<a class="post-tag-link rounded-full px-3 py-1 {{ tag_slug }}"
+   href="/tag/{{ tag_slug }}/">
+  <span class="post-tag {{ tag_slug }}">#{{ include.tag }}</span>
 </a>

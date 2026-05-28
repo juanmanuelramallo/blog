@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% assign posts = site.posts | where: "author", page.author %}
+{% assign author_profile = site.data.taxonomy.authors | where: "author", page.author | first %}
+{% assign display_author = author_profile.name | default: page.display_author %}
+
+<section class="tag-intro" aria-labelledby="author-title">
+  <p class="home-kicker">Author</p>
+  <h1 id="author-title">{{ display_author }}</h1>
+  {% if author_profile.bio %}
+    <p>{{ author_profile.bio }}</p>
+  {% endif %}
+</section>
+
+{% include posts.html posts=posts %}

@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title: "How to deploy Apache Superset with Dokku?"
-categories: how-to
-tags: [how-to, dokku]
+categories: ops
+tags: [ops]
+permalink: /how-to/2023/06/28/how-to-deploy-apache-superset-with-dokku.html
 excerpt: Deploying Apache Superest via Dokku—git deployment, nginx, SSL out of the box
 ---
 

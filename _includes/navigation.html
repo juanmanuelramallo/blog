@@ -1,21 +1,17 @@
-<header role="banner" class="site-header sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm">
+<header role="banner" class="site-header sticky top-0 backdrop-blur-sm">
   <div class="md:container md:mx-auto flex flex-row justify-between py-4 mx-2">
     <div class="sm:flex sm:flex-row sm:gap-10">
-      <a href="/">
-        <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-black to-gray-400 hover:from-sky-400 hover:to-amber-400" href="/">
-          Write it<br> simple.
-        </span>
+      <a class="site-logo" href="/" aria-label="Write it simple home">
+        Write it<br> simple<span>.</span>
       </a>
     </div>
-
-
     <div class="flex flex-col gap-2 sm:block">
       <div class="flex flex-row my-auto h-full" role="navigation">
         {% for item in site.data.navigation.links %}
           <div class="px-1 sm:px-4 my-auto">
             <a
                 href="{{ item.url }}"
-                class="py-1 hover:text-primary">
+                class="site-nav-link py-1">
               {{ item.title }}
             </a>
           </div>

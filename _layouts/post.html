@@ -4,13 +4,24 @@ layout: default
 
 <section class="post-page" id="post">
   <header class="post-header">
+    {% assign primary_tag = page.tags[0] %}
+    {% assign primary_taxonomy = site.data.taxonomy.tags | where: "slug", primary_tag | first %}
+    {% assign primary_label = primary_taxonomy.label | default: primary_tag %}
+    <nav class="post-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ site.baseurl }}/">Articles</a>
+      {% if primary_tag %}
+        <span aria-hidden="true">/</span>
+        <a href="{{ site.baseurl }}/tag/{{ primary_tag | slugify }}/">{{ primary_label }}</a>
+      {% endif %}
+    </nav>
+
     <p class="post-meta">
       {% include time.html date=page.date %}
       &middot;
       {% include read_time.html read_time=page.read_time_in_minutes %}
       {% if page.author %}
       &middot;
-      <span>By {{ page.author | replace: "Juan Manuel Ramallo", "Juanma" }}</span>
+      {% include author.html author=page.author %}
       {% endif %}
     </p>
 
@@ -23,16 +34,25 @@ layout: default
 
   </header>
 
-  <div class="post-content prose">
-    {{ content }}
-  </div>
+  <div class="post-reading-layout">
+    <div>
+      <div class="post-content prose">
+        {{ content }}
+      </div>
 
-  <div class="post-tags">
-    {% for tag in page.tags %}
-    <p>
-      {% include tag.html tag=tag %}
-    </p>
-    {% endfor %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <p>
+          {% include tag.html tag=tag %}
+        </p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="post-toc" aria-labelledby="post-toc-title" hidden>
+      <h2 id="post-toc-title">On this page</h2>
+      <ol></ol>
+    </aside>
   </div>
 
   {% if page.previous or page.next %}
@@ -89,3 +109,41 @@ layout: default
     </section>
   {% endif %}
 </section>
+
+<script>
+  (function () {
+    var content = document.querySelector('.post-content');
+    var toc = document.querySelector('.post-toc');
+    if (!content) return;
+
+    var headings = Array.prototype.slice.call(content.querySelectorAll('h2[id], h3[id]'));
+
+    headings.forEach(function (heading) {
+      if (heading.querySelector('.heading-anchor')) return;
+
+      var anchor = document.createElement('a');
+      anchor.className = 'heading-anchor';
+      anchor.href = '#' + heading.id;
+      anchor.setAttribute('aria-label', 'Link to ' + heading.textContent);
+      anchor.textContent = '#';
+      heading.appendChild(anchor);
+    });
+
+    if (!toc || headings.length < 2) return;
+
+    var list = toc.querySelector('ol');
+    headings.forEach(function (heading) {
+      var item = document.createElement('li');
+      var link = document.createElement('a');
+
+      item.className = 'toc-' + heading.tagName.toLowerCase();
+      link.href = '#' + heading.id;
+      link.textContent = heading.childNodes[0] ? heading.childNodes[0].textContent : heading.textContent;
+
+      item.appendChild(link);
+      list.appendChild(item);
+    });
+
+    toc.hidden = false;
+  })();
+</script>

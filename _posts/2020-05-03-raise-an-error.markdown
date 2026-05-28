@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title:  "Use error objects instead of strings"
-categories: why-not
-tags: [why-not, ruby]
+categories: software
+tags: [software, ruby]
+permalink: /why-not/2020/05/03/raise-an-error.html
 excerpt: "[...] we tend to write a lovely: raise 'some error explanation'"
 ---
 
@@ -26,4 +27,3 @@ It raised a RuntimeError which is an error that can occur not only here.
 ThisErrorIKnow: some error explanation
 ```
 Here it raised our custom error class which in my opinion is better because we'll be able to rescue this error specifically later if needed.
-

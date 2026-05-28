@@ -2,8 +2,9 @@
 layout: post
 author: "Juan Manuel Ramallo"
 title:  "Use constants to specify the version of your gem"
-categories: why-not
-tags: [why-not, ruby, gems]
+categories: software
+tags: [software, ruby]
+permalink: /why-not/2020/05/04/use-constants-to-write-the-semver-of-your-gems.html
 ---
 
 When developing gems or external libraries we frequently write the semantic versioning as a string.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "[DRAFT] When in code review..."
-categories: soft
-tags: [soft]
+categories: meta
+tags: [meta, software]
 ---
 
 ...do as the code reviewers do, or instead follow these 3 simple suggestions.
@@ -25,4 +25,3 @@ Why not just request for changes and forget about the kindly "what do you think 
 Because you might get the other person to follow your comment blindly, despite of not being entirely convinced on the reasons.
 
 ### 3.
-
