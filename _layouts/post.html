@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<section class="post my-6" id="post">
-  <div class="text-left mb-3">
-    <p class="text-sm">
+<section class="post-page" id="post">
+  <header class="post-header">
+    <p class="post-meta">
       {% include time.html date=page.date %}
       &middot;
       {% include read_time.html read_time=page.read_time_in_minutes %}
@@ -13,10 +13,17 @@ layout: default
       <span>By {{ page.author | replace: "Juan Manuel Ramallo", "Juanma" }}</span>
       {% endif %}
     </p>
-    <h1 class="text-3xl mt-2 font-extrabold tracking-tight text-gray-900 sm:text-4xl xl:mb-8">{{ page.title }}</h1>
-  </div>
 
-  <div class="prose mb-6">
+    <h1>{{ page.title }}</h1>
+
+    {% assign post_excerpt = page.excerpt | strip_html | strip %}
+    {% if post_excerpt != "" %}
+      <p class="post-dek">{{ post_excerpt }}</p>
+    {% endif %}
+
+  </header>
+
+  <div class="post-content prose">
     {{ content }}
   </div>
 
@@ -27,4 +34,58 @@ layout: default
     </p>
     {% endfor %}
   </div>
+
+  {% if page.previous or page.next %}
+    <nav class="post-nav" aria-label="Post navigation">
+      {% if page.previous %}
+        <a class="post-nav-item" href="{{ site.baseurl }}{{ page.previous.url }}">
+          <span>Previous</span>
+          <strong>{{ page.previous.title }}</strong>
+        </a>
+      {% endif %}
+      {% if page.next %}
+        <a class="post-nav-item" href="{{ site.baseurl }}{{ page.next.url }}">
+          <span>Next</span>
+          <strong>{{ page.next.title }}</strong>
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+
+  {% assign related_count = 0 %}
+  {% capture related_items %}
+    {% for post in site.posts %}
+      {% unless post.url == page.url %}
+        {% assign has_related_tag = false %}
+        {% for tag in page.tags %}
+          {% if post.tags contains tag %}
+            {% assign has_related_tag = true %}
+          {% endif %}
+        {% endfor %}
+        {% if has_related_tag and related_count < 3 %}
+          {% assign related_count = related_count | plus: 1 %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <span>
+                {% include time.html date=post.date %}
+                {% if post.tags[0] %}
+                  &middot; #{{ post.tags[0] }}
+                {% endif %}
+              </span>
+              <strong>{{ post.title }}</strong>
+            </a>
+          </li>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endcapture %}
+
+  {% if related_count > 0 %}
+    <section class="related-posts" aria-labelledby="related-posts-title">
+      <h2 id="related-posts-title">Related posts</h2>
+      <ul>
+        {{ related_items }}
+      </ul>
+    </section>
+  {% endif %}
 </section>
