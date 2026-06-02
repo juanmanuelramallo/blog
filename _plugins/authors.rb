@@ -20,9 +20,11 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'author.html')
+      profile = site.data.dig('taxonomy', 'authors')&.find { |item| item['author'] == author }
       self.data['author'] = author
       self.data['display_author'] = display_author
-      self.data['title'] = "By #{display_author}"
+      self.data['title'] = profile&.fetch('page_title', nil) || "By #{display_author}"
+      self.data['description'] = profile&.fetch('page_description', nil) || profile&.fetch('bio', nil)
     end
   end
 end
