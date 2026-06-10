@@ -10,7 +10,7 @@ permalink: /tags/
     <h1 id="topics-title">A cleaner map of the blog.</h1>
     <p>
       Start with the recurring themes: practical software, Ruby and Rails,
-      operations, side projects, and field notes from the work around the work.
+      operations, and side projects that turned into real tools.
     </p>
   </header>
 
