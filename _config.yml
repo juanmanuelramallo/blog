@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Simple programming short articles. Mostly ruby focused.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://1ma.dev" # the base hostname & protocol for your site, e.g. http://example.com
+clarity_project_id: "y0qqybtvpo"
 twitter_username: jotaeme_r
 github_username:  juanmanuelramallo
 social:
