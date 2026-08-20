@@ -13,9 +13,11 @@ Sitemap: https://1ma.dev/sitemap.xml
 - Small-team engineering judgment
 - Side projects
 - Practical software notes
+- Document parsing and data validation
 
 ## Recommended Pages
 
+- [How to parse financial PDFs without trusting extracted text](https://1ma.dev/software/2026/08/20/parsing-financial-pdfs-without-trusting-extracted-text.html)
 - [How to deploy Apache Superset with Dokku?](https://1ma.dev/how-to/2023/06/28/how-to-deploy-apache-superset-with-dokku.html)
 - [How to find the PID of a process using a specific port](https://1ma.dev/how-to/2021/12/12/how-to-find-processes-by-port)
 - [About side projects](https://1ma.dev/general/2024/03/03/about-side-projects)
